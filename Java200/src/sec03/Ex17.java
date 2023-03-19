@@ -12,15 +12,17 @@ public class Ex17 {
 		int a = scan.nextInt();
 		System.out.print("b의 값 : ");
 		int b = scan.nextInt();
-		
+
 		if (a == b) {
 			System.out.println("두 수는 같습니다.");
-		} else if (a > b) {
-			int max = a;
-			int min = b;
 		} else {
-			int max = b;
-			int min = a;
+			if (a > b) {
+				int max = a;
+				int min = b;
+			} else {
+				int max = b;
+				int min = a;
+			}
 		}
 		
 		System.out.println("작은 값은 " + min + "입니다.");

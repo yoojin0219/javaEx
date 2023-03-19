@@ -13,14 +13,18 @@ public class Ex17_1 {
 		System.out.print("b의 값 : ");
 		int b = scan.nextInt();
 		
+		int max, min;
+		
 		if (a == b) {
 			System.out.println("두 수는 같습니다.");
-		} else if (a > b) {
-			int max = a;
-			int min = b;
 		} else {
-			int max = b;
-			int min = a;
+			if (a > b) {
+				int max = a;
+				int min = b;
+			} else {
+				int max = b;
+				int min = a;
+			}
 		}
 		
 		System.out.println("작은 값은 " + min + "입니다.");
