@@ -17,14 +17,14 @@ public class Ex06 {
 			if (n <= 0) {
 			} else {
 				/*
-				for (int i = n; n >= 0; --n) {
+				for (int i = n; n >= 0; n--) {
 					System.out.println(n);
 				}
 				*/
 				int i = n;
 				while (n >= 0) {
 					System.out.println(n);
-					break;
+					n--;
 				}
 				break;
 			}
