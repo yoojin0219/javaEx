@@ -19,11 +19,11 @@ public class Ex17 {
 			int max, min;
 
 			if (a > b) {
-				int max = a;
-				int min = b;
+				max = a;
+				min = b;
 			} else {
-				int max = b;
-				int min = a;
+				max = b;
+				min = a;
 			}
 			System.out.println("작은 값은 " + min + "입니다.");
 			System.out.println("큰 값은 " + max + "입니다.");
