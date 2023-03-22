@@ -17,20 +17,20 @@ public class Ex06 {
 			if (n <= 0) {
 			} else {
 				/*
-				for (int i = n; n >= 0; n--) {
-					System.out.println(n);
-				}
-				*/
-				int i = n;
 				while (n >= 0) {
 					System.out.println(n);
 					n--;
 				}
-				break;
+				*/			
+				
+				for (; n >= 0; n--) {
+					System.out.println(n);
+				}
+				 
 			}
+			System.out.println("n의 값이 " + n + "이 되었습니다." );
 		}
 		
-		System.out.println("n의 값이 " + n + "이 되었습니다." );
 		
 	}
 
