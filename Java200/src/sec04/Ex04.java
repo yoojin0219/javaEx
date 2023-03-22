@@ -19,16 +19,16 @@ public class Ex04 {
 		}
 		
 		/*
-		for (int i = a; i <= b; i++) {
-			System.out.print(i + " ");
+		for (; a <= b; a++) {
+			System.out.print(a + " ");
 		}
 		*/
 		
-		int i = a;
-		while (i <= b) {
-			System.out.print(i + " ");
-			i++;
+		while (a <= b) {
+			System.out.print(a + " ");
+			a++;
 		}
+		
 	}
 
 }
