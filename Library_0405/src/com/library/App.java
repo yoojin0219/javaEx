@@ -46,15 +46,38 @@ public class App {
 				}
 			} else {
 				System.out.println(id + "님, 환영합니다.");
+				outter2 :
 				while (true) {
 					System.out.println("1. 도서 대출 | 2. 도서 반납 | 0. 로그아웃 | q. 프로그램 종료");
-					
-					
+					System.out.print("메뉴를 입력해주세요 : ");
+					int menu = getInt();
+					switch (menu) {
+					case 1:
+						System.out.println(lib.toString());
+						System.out.print("대출할 도서 번호 : ");
+						int index = getInt();
+						lib.rentBook(index);
+						break;
+					case 2:
+						System.out.println(lib.toString());
+						System.out.print("반납할 도서 번호 : ");
+						int index2 = getInt();
+						lib.returnBook(index2);
+						break;
+					case 0:
+						System.out.println("로그아웃 되었습니다.");
+						break outter2;
+
+					default:
+						System.out.println("메뉴를 잘못 입력하셨습니다.");
+						break;
 				}
 				
 			}
 			
 			
+		}
+		
 		}
 		
 		

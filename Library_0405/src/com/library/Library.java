@@ -91,17 +91,19 @@ public class Library {
 			if(book.getNo() == no) {
 				if(book.isRent()) {
 					System.err.println("이미 대출중인 도서입니다.");
+					return false;
 				} else {
 					book.setRent(true);
 //					dao.listToFile(list);
 					System.out.println(toString());
 					System.out.println("대출이 완료되었습니다.");
+					return true;
 				}
-			} else {
-				System.err.println("일련번호를 확인해주세요.");
 			}
 		}
 		
+		 
+		System.err.println("일련번호를 확인해주세요.");
 		return false;
 	}
 	
